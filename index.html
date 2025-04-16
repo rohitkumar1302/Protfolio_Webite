@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font owsome cdn link  -->
+  </head>
+
+  <body>
+    <!-- rmdir /s /q .git -->
+
+    <!-- ************** Start header section ******************************* -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="Images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Sevices</a></li>
+            <li><a href="#portfolio">Potfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            Hi, I'm <span>Rohit Kumar</span><br />
+            From Gurugram
+          </h1>
+          <p><br />I'am a Software Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ******************** End header section *************************************** -->
+
+    <!-- ************************* start about section ****************************************** -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/Images/Ro2-design.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <h3>
+              Hello! I'm Rohit Kumar, currently pursuing a B.Tech in Computer
+              Science. With a strong command of C++ and a passion for
+              problem-solving, I am committed to building efficient and scalable
+              software solutions. My academic background, coupled with practical
+              experience in software development, has equipped me with a solid
+              foundation in both front-end and back-end technologies. I thrive
+              on challenges, constantly seek to improve my coding skills, and am
+              enthusiastic about exploring new technologies that can make an
+              impact. As I progress in my career, I aim to contribute innovative
+              solutions and grow as a proficient developer.
+            </h3>
+
+            <div class="tab-title">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Languages: </span><br />C++, JavaScript,
+                  Python
+                </li>
+                <li>
+                  <span>Front-End Development: </span><br />HTML, CSS, React
+                </li>
+                <li><span>Back-End Development:</span><br />Node.js, SQL</li>
+                <li>
+                  <span>Data Structure and Algorithm</span><br />Solved 50+ DSA
+                  Question at LeetCode and 50+ Question at Coding Ninja
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2from June 25, 2024, to August 5, 2024</span
+                  ><br />During my six-week IBM SkillsBuild Summer Internship
+                  with CSRBOX, I gained practical experience in front-end web
+                  development. I developed and enhanced my skills in HTML, CSS,
+                  and JavaScript, working on real-world projects and
+                  collaborating with industry mentors. This experience allowed
+                  me to understand core front-end concepts, refine my design
+                  skills, and learn how to create responsive, user-friendly web
+                  applications. The internship was a great opportunity to build
+                  a solid foundation in front-end development and apply my
+                  technical knowledge to real-world challenges
+                </li>
+
+                <li>
+                  <span>Winter Internship Program 2024</span><br />The
+                  CyberXield Winter Internship Program was an intensive
+                  opportunity where I honed my skills in web development,
+                  particularly in a cybersecurity-focused context. Collaborating
+                  with Cyberarch, I gained hands-on experience in creating
+                  secure, scalable, and efficient web applications. This
+                  partnership allowed me to understand the integration of
+                  development practices with cybersecurity measures, ensuring
+                  robust and reliable digital products. During the program, I
+                  worked on developing projects that required a combination of
+                  front-end and back-end technologies, applying best practices
+                  for secure coding and enhancing web performance. I also
+                  contributed to team-based problem-solving and participated in
+                  various knowledge-sharing sessions, which further enriched my
+                  understanding of cybersecurity in web development.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>10th Grade</span><br />Institution: Ambika Public
+                  School, Aurangabad, (Bihar) <br />
+                  Board: CBSE<br />
+                  Year: 2018<br />
+                  Grade: 70%
+                </li>
+                <li>
+                  <span>12th Grade</span><br />Institution: Sn Sinha College,
+                  Aurangabad, (Bihar) <br />
+                  Board: Bihar School Examination Board, Patna<br />
+                  Year: 2020 <br />
+                  Grade: 70%
+                </li>
+                <li>
+                  <span>B.Tech in Computer Science Engineering</span
+                  ><br />Institution: St. Andrews Institute of Technology and
+                  Management, Gurugram, Haryana<br />
+                  Year: 2021 - 2025<br />
+                  CGPA: 7.5
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ***************************** End about section ******************************************** -->
+
+    <!-- ******************************** Start Services section ************************************************ -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Software Developer</h2>
+            <p>
+              As a fresher in software development, I have a strong foundation
+              in coding, problem-solving, and understanding the core principles
+              of software engineering. I am skilled in languages such as Python,
+              C++, and JavaScript, which I have applied in multiple academic
+              projects to develop practical solutions. Through these projects, I
+              have gained hands-on experience in the software development
+              lifecycle, including coding, testing, and debugging applications
+              to ensure optimal functionality and user satisfaction. I have also
+              developed an understanding of web technologies, including HTML and
+              CSS, and worked with tools like GitHub for version control and
+              Visual Studio Code for coding. My approach combines technical
+              proficiency with a commitment to continuous learning, enabling me
+              to adapt to new technologies and methodologies.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <!-- <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque repudiandae voluptatum optio? Rem
+                        labore modi asperiores sunt quia, error veritatis voluptates fugiat, eius facere hic?</p>
+                    <a href="#">Learn more</a>
+                </div> -->
+
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>Front End Developer</h2>
+            <p>
+              As a fresher in front-end development, I have a solid
+              understanding of the essential tools and technologies used to
+              build engaging, responsive user interfaces. I am proficient in
+              HTML, CSS, and JavaScript and have experience using frameworks
+              like Bootstrap to create visually appealing and user-friendly
+              websites. Through my academic projects, I have gained practical
+              knowledge of structuring and styling web pages, optimizing site
+              performance, and enhancing user interactions. I am skilled in
+              transforming design concepts into interactive, functional
+              interfaces and have hands-on experience with tools like GitHub for
+              version control and Visual Studio Code for coding. I am
+              enthusiastic about leveraging my front-end skills to build
+              high-quality web applications and contribute to creating seamless
+              digital experiences.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ******************************** End Services section ************************************************ -->
+
+    <!-- /* < !-- ************************* start portfolio section ****************************************** -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img
+              src="Images/e-commerce (1).png"
+              alt="images"
+              height="600px"
+            />
+            <div class="layer">
+              <h3>E-commerce Website</h3>
+              <p>Built with React, Bootstrap, Stripe, and Node.js.</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="Images/Myntra-clone.png" alt="" height="600" />
+            <div class="layer">
+              <h3>Myntra Clone</h3>
+              <p>E-commerce UI built using React for frontend</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="Images/Screenshot 2025-04-16 122214.png"
+              alt=""
+              height="300"
+            />
+            <div class="layer">
+              <h3>Study Sync</h3>
+              <p>Study Sync: Responsive educational site</p>
+              <a href="https://rohitkumar1302.github.io/Study-sync-website/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="Images/Screenshot 2025-04-16 122201.png"
+              alt=""
+              height="300"
+            />
+            <div class="layer">
+              <h3>Sahi Shiksha</h3>
+              <p>Shi Shiksha: Educational website</p>
+              <a href="https://rohitkumar1302.github.io/Educational-website/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img
+              src="Images/pizzi-pizza.png"
+              alt=""
+              height="300"
+            />
+            <div class="layer">
+              <h3>Pizza pie</h3>
+              <p>Pizzi Pizza: Interactive pizza website using HTML, CSS, and JavaScript</p>
+              <a href="https://rohitkumar1302.github.io/Pizzi-Pizza/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+
+    <!-- /* < !-- ************************* End portfolio section ****************************************** -->
+
+    <!-- /* < !-- ************************* start Contact section ****************************************** -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>rk8106263@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9905779671</p>
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/rohitkumar0213/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="Images/Rohit resume.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form action="https://formspree.io/f/mkgwojoz" method="POST">
+              <!-- // by this we can able to send message of contact page in my Gmail ('It can take from website name fromsfree') -->
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id="Message box"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright <i class="fa-regular fa-copyright"></i> Rohit. Made with
+          <i class="fa-solid fa-heart"></i> by Rohit Kumar
+        </p>
+      </div>
+    </div>
+
+    <!-- /* < !-- ************************* End Contact section ****************************************** -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab"); //Here we can call 'tabname' this directly redirect to the [opentab('education') or opentab(experience), or opentab(skills)]
+      }
+    </script>
+
+    <script>
+      var sidemeu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemeu.style.right = "0";
+      }
+      function closemenu() {
+        sidemeu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
